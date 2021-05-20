@@ -1,2 +1,7 @@
 # Physic
- Nsse trabalho foi feito um calculo físico de velocidade final, Quantidade de Movimento, Força, e Peso
+ Nesse trabalho foi feito um calculo físico simples de: 
+ 
+ - Velocidade final;
+ - Quantidade de Movimento;
+ - Força;
+ - Peso
