@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>M.R.U.V.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Movimento Retilineo Uniformemente Variado</h1>
+        </header>
+        <form action="GetDados" name="Formulary" method="POST" id="Form">
+            <fieldset>
+                <legend>Dados</legend>
+                <p>
+                    <label for="Velocy">Digite a velocidade inicial do veículo:</label>
+                    <input type="text" name="velocidade" id="Velocy" maxlength="7" size="7" placeholder="m/s">
+                    m/s
+                </p>
+                <p>
+                    <label for="acceleration">Digite a aceleração do veículo:</label>
+                    <input type="text" name="aceleracao" id="acceleration" maxlength="7" size="7" placeholder="m/s²">
+                    m/s²
+                </p>
+                <p>
+                    <label for="Space">Digite a distância percorrida:</label>
+                    <input type="text" name="distancia" id="Space" maxlength="7" size="7" placeholder="m">
+                    m
+                </p>
+                <p>
+                    <label for="Mass">Digite a massa do veículo + o motorista:</label>
+                    <input type="text" name="massa" id="Mass" maxlength="10" size="10" placeholder="kg">
+                    kg
+                </p>
+            </fieldset>
+            <br/>
+            <input type="submit" name="enviar" id="Button" value="Enviar">
+        </form>
+    </body>
+</html>
