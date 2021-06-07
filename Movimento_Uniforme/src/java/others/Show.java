@@ -45,10 +45,25 @@ public class Show {
         
         String Dados = "";
         
-        Dados += "<p><strong>Velocidade final</strong>___________ " + f.format(getV()) + " m/s</p>";
-        Dados += "<p><strong>Quantidade de movimento</strong>__ " + f.format(getQ()) + " kg.m/s</p>";
-        Dados += "<p><strong>Força resultante</strong>___________ " + f.format(getF()) + " N</p>";
-        Dados += "<p><strong>Peso</strong>_____________________ " + f.format(getP()) + " N</p>";
+        Dados += "<table>";
+        Dados += "  <th colspan='2'>Cálculos físicos</th>";
+        Dados += "  <tr>";
+        Dados += "      <th>Velocidade final</th>";
+        Dados += "      <td>" + f.format(getV()) + " m/s</td>";
+        Dados += "  </tr>";
+        Dados += "  <tr>";
+        Dados += "      <th>Quantidade de movimento</th>";
+        Dados += "      <td>" + f.format(getQ()) + " kg.m/s</td>";
+        Dados += "  </tr>";
+        Dados += "  <tr>";
+        Dados += "      <th>Força resultante</th>";
+        Dados += "      <td>" + f.format(getF()) + " N</td>";
+        Dados += "  </tr>";
+        Dados += "  <tr>";
+        Dados += "      <th>Peso</th>";
+        Dados += "      <td>" + f.format(getP()) + " N</td>";
+        Dados += "  </tr>";
+        Dados += "</table>";
         
         return Dados;
     }

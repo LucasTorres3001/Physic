@@ -25,17 +25,10 @@ public class GetDados extends HttpServlet {
         S_txt = request.getParameter("distancia");
         m_txt = request.getParameter("massa");
         
-        double Vel,Acceleration,Space,mass;
-        
-        Vel = Double.parseDouble(Vo_txt);
-        Acceleration = Double.parseDouble(a_txt);
-        Space = Double.parseDouble(S_txt);
-        mass = Double.parseDouble(m_txt);
-        
-        request.setAttribute("Velocy", Vel);
-        request.setAttribute("Aceleracao", Acceleration);
-        request.setAttribute("Space", Space);
-        request.setAttribute("Mass", mass);
+        request.setAttribute("Velocy", Vo_txt);
+        request.setAttribute("Aceleracao", a_txt);
+        request.setAttribute("Space", S_txt);
+        request.setAttribute("Mass", m_txt);
         
         request.getRequestDispatcher("indexII.jsp").forward(request, response);
     }
